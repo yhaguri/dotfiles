@@ -12,10 +12,27 @@
 	status = auto
 	branch = auto
 [alias]
+  # status
 	st = status
-	co = checkout
-	ci = commit
+
+	# checkout
+	co  = checkout
+  cob = checkout -b
+
+  # commit
+	c   = commit
+	cm  = commit -m
+  cem = commit --allow-empty -m
+			
+  # diff
+	d  = diff
+	dm = diff master
+	dd = diff development
+
+  # branch
 	br = branch
+	
 	hist = log --pretty=format:\\\"%h %ad | %s%d [%an]\\\" --graph --date=short
+
 [core]
 	editor = vim -c \"set fenc=utf-8\"
