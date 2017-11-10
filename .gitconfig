@@ -12,6 +12,7 @@
 	status = auto
 	branch = auto
 [alias]
+
   # status
 	st = status
 
